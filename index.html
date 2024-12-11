@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bill Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Company</h1>
+      <p>Address: 123 Business St, City, Country</p>
+      <p>Contact: +1 234 567 890</p>
+    </header>
+
+    <div class="form-section">
+      <h2>Generate Bill</h2>
+      <form id="billForm">
+        <label for="buyerName">Buyer Name:</label>
+        <input type="text" id="buyerName" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+        <label for="gstCheckbox">
+          <input type="checkbox" id="gstCheckbox"> Include GST
+        </label>
+        <div id="itemSection">
+          <h3>Particulars</h3>
+          <label for="itemName">Item Name:</label>
+          <input type="text" id="itemName">
+          <label for="itemAmount">Amount:</label>
+          <input type="number" id="itemAmount">
+          <button type="button" id="addItem">Add Item</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="bill-section">
+      <button id="generateBill">Generate Bill</button>
+      <button id="downloadPdf">Download as PDF</button>
+      <div id="billOutput"></div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

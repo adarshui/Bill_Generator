@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  form label, .form-section h3 {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  form input, button {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    cursor: pointer;
+    background: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .bill-section {
+    margin-top: 20px;
+  }
+  
+  .bill-output {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .total {
+    text-align: right;
+    font-weight: bold;
+  }
+  
